@@ -1,4 +1,4 @@
-# *Important* 
+## *Important* 
 
 Torrent uploading and downloading will only work from a machine with the appropriate ports open.  The default TCP port range for BitTorrent is 6881-6889.  It is necessary to specifically request these ports be opened on a VM for experiments with torrent files, and they are not available on desktops.
 
