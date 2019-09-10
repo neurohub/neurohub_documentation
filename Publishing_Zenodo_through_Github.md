@@ -1,4 +1,4 @@
-﻿# Publishing to Zenodo through Github			September 2019
+﻿# Publishing to Zenodo through Github
 
 
 1. Log in to Zenodo with your Github account.
