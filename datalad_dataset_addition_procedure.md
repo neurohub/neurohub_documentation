@@ -1,4 +1,4 @@
-# Datalad dataset preparation procedure		Emmet A. O'Brien 	September 2019
+# Datalad dataset preparation procedure
 
 This procedure is intended for developers, and is not designed with general users in mind.
 
@@ -55,14 +55,13 @@ The version of git-annex installed can be verified with:
 ```
 cd conp-dataset
 datalad create -d . projects/<newprojectname>
-
 ```
 
 4. Create a sibling for this project on github:
 
 ```datalad create-sibling-github -d projects/<newprojectname> <newprojectname>```
 
-(The first <newprojectname> is local, the second is the name of the github repository.  These do not need to be identical for the procedure to work, but it is recommended that they should be to avoid confusion.  Creating a github repository for CONP data by other means, e.g. directly on github, is not recommended.)
+(The first "newprojectname" is local, the second is the name of the github repository.  These do not need to be identical for the procedure to work, but it is recommended that they should be to avoid confusion.  Creating a github repository for CONP data by other means, e.g. directly on github, is not recommended.)
 
 5. Manually edit the ```.gitmodules``` file in your local conp-dataset directory:
 
@@ -76,7 +75,7 @@ The last three lines of this file will contain an entry for your new project, bu
 
 Previous entries in the ```.gitmodules``` file can be used as a guide.
 
-6. Populate your new project directory (all commands in this section need to be run in that directory)
+6. Populate your newproject directory (all commands in this section need to be run in that directory)
 
 a. Create a ```README.md``` file with the editor of your choice and then add it to the repository
 
@@ -99,7 +98,7 @@ From your new project directory:
 ```
   datalad save
   datalad publish --to github
-  cd ../..		```(this should put you in ```~/conp-dataset/```)```
+  cd ../..		(this should put you in ~/conp-dataset/)
   datalad save
   datalad publish --to origin
 ```
