@@ -62,7 +62,7 @@ while ($counter < $in_json_linecount) {
 print "$entity||$output_types{$entity}||$output_schemas{$entity}\n";
 
             print OUT_JSONLD $in_json[$counter]."\n";
-            $schema_line = $indent.'"$schema": "'.$output_schemas{$entity}.'",';
+            $schema_line = $indent.'"@id": "'.$output_schemas{$entity}.'",';
             print OUT_JSONLD $schema_line."\n";
             $type_line   = $indent.'"@type": "'.$output_types{$entity}.'",';
             print OUT_JSONLD $type_line."\n";
